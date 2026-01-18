@@ -1,7 +1,7 @@
 # Templ Starter Template
 
 This is a starter template for making websites with Templ.
-It uses a component approach where both behavior (JS file) and styling (CSS files) are located adjacent to the component they are related to.
+It uses a component approach where both behavior (JS files) and styling (CSS files) are located adjacent to the component they are related to.
 
 
 This template also has hot-reload setup through the use of Air. Running `make` will trigger the hot-reload.
