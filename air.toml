@@ -1,0 +1,15 @@
+root = "."
+tmp_dir = "build"
+
+[build]
+cmd = "go build -o ./build/my-website ."
+entrypoint = "./build/my-website"
+include_ext = ["go", "templ", "css", "js"]
+exclude_dir = ["build"]
+
+[log]
+timestamp = false
+
+[watch]
+dir = "."
+include_ext = ["go", "templ", "css", "js"]

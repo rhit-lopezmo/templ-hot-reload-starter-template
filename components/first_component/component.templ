@@ -1,0 +1,23 @@
+package first_component
+
+import (
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
+)
+
+var titleCase cases.Caser = cases.Title(language.English)
+var assetPrefix = "/static/components/first_component/"
+
+templ FirstComponent(name string) {
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href={ assetPrefix + "style.css" }/>
+	</head>
+	<h1>Hello, { titleCase.String(name) }!</h1>
+	<img src={ assetPrefix + "images/bibo-eyes.jpg" }/>
+}
